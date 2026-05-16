@@ -2,20 +2,21 @@
 
 Official static company website for Karamix Labs.
 
-Karamix Labs is a modern technology studio focused on AI-assisted systems, automation-inspired software, business dashboards, web platforms, and scalable digital products.
+Karamix Labs focuses on mobile application interfaces, responsive web platforms, business dashboards, modern UI/UX, and practical digital systems.
 
 ## Tech Stack
 
 - HTML
 - CSS
 - JavaScript
+- Responsive design
 - Static assets in `imgs/` and `icons/`
 
 ## Local Usage
 
 Open `index.html` directly in a browser.
 
-No build step, package manager, or framework is required.
+No build step, package manager, framework, or server is required.
 
 ## Deployment
 
