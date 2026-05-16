@@ -4,6 +4,8 @@ Official static company website for Karamix Labs.
 
 Karamix Labs focuses on mobile application interfaces, responsive web platforms, business dashboards, modern UI/UX, and practical digital systems.
 
+Public company communication channel: https://t.me/karamixlabs
+
 ## Tech Stack
 
 - HTML
@@ -20,7 +22,7 @@ No build step, package manager, framework, or server is required.
 
 ## Deployment
 
-- Target: GitHub Pages
+- Target: Static hosting
 - Domain target: `karamixlabs.com`
 
 ## Maintainer

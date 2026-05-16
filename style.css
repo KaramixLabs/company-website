@@ -1457,10 +1457,17 @@ p {
     transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
-.contact-card--primary:hover {
+.contact-card--primary:hover,
+.contact-card--telegram:hover {
     transform: translateY(-0.2rem);
     border-color: rgba(255, 31, 99, 0.58);
     box-shadow: 0 20px 52px rgba(0, 0, 0, 0.32), 0 0 34px rgba(255, 31, 99, 0.14);
+}
+
+.contact-card--telegram {
+    border-color: rgba(25, 211, 255, 0.34);
+    background: linear-gradient(135deg, rgba(25, 211, 255, 0.13), rgba(255, 31, 99, 0.07));
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 .contact-card span {
@@ -1472,10 +1479,29 @@ p {
 }
 
 .contact-card strong {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
     color: var(--color-text);
     font-size: 1rem;
     line-height: 1.35;
     overflow-wrap: anywhere;
+}
+
+.contact-card__icon {
+    display: inline-grid;
+    flex: 0 0 auto;
+    width: 1.85rem;
+    height: 1.85rem;
+    place-items: center;
+    border: 1px solid rgba(25, 211, 255, 0.42);
+    border-radius: 50%;
+    background: rgba(25, 211, 255, 0.1);
+    color: var(--color-cyan);
+    font-size: 0.66rem;
+    font-weight: 800;
+    line-height: 1;
+    box-shadow: 0 0 18px rgba(25, 211, 255, 0.12);
 }
 
 .contact-card small {
