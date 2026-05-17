@@ -26,8 +26,8 @@
 
     const translations = {
         en: {
-            metaTitle: "Karamix Labs | Premium Mobile Apps, Web Interfaces & Digital Systems",
-            metaDescription: "Karamix Labs is a premium digital company designing mobile application interfaces, responsive web platforms, business dashboards, and scalable digital systems.",
+            metaTitle: "Karamix Labs | Premium Mobile Apps, Web Interfaces, AI & Digital Systems",
+            metaDescription: "Karamix Labs is a premium digital company by AbdulKarim Haj Yasin, designing mobile apps, web interfaces, Telegram bot systems, AI-assisted workflows, and scalable digital systems for Arabic and regional businesses.",
             brandHome: "Karamix Labs home",
             brandName: "Karamix Labs",
             brandTagline: "Mobile Applications • Web Interfaces • Digital Systems",
@@ -120,8 +120,8 @@
             footerFounder: "Founded by AbdulKarim Haj Yasin"
         },
         ar: {
-            metaTitle: "Karamix Labs | واجهات تطبيقات ومواقع وأنظمة رقمية احترافية",
-            metaDescription: "Karamix Labs شركة رقمية متخصصة في تصميم واجهات تطبيقات الجوال، منصات الويب المتجاوبة، لوحات الأعمال، والأنظمة الرقمية القابلة للتوسع.",
+            metaTitle: "Karamix Labs | تصميم تطبيقات ومواقع ويب وذكاء اصطناعي",
+            metaDescription: "Karamix Labs شركة رقمية أسسها عبدالكريم حاج ياسين من آل ياسين، تقدم تصميم تطبيقات، تصميم مواقع ويب، تصميم بوت تلغرام، وحلول ذكاء اصطناعي للشركات والمشاريع العربية.",
             brandHome: "العودة إلى الصفحة الرئيسية لكاراميكس لابز",
             brandName: "Karamix Labs",
             brandTagline: "تطبيقات جوال • واجهات ويب • أنظمة رقمية",

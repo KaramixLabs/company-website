@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /imgs/
+Allow: /icons/
+
 Sitemap: https://karamixlabs.com/sitemap.xml
