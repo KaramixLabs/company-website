@@ -1,3 +1,4 @@
+# Karamix Labs crawler access policy
 User-agent: *
 Allow: /
 
