@@ -60,6 +60,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/json" id="analytics-config">
+    {
+      "measurementId": "G-HW6K6L6RNX",
+      "privacyMode": "consent-aware",
+      "allowGoogleSignals": false,
+      "allowAdPersonalization": false,
+      "trackOutboundLinks": true,
+      "trackScrollDepth": true,
+      "scrollMilestones": [25, 50, 75, 90, 100]
+    }
+    </script>
+    <script>
+    (function () {
+        var configNode = document.getElementById("analytics-config");
+        var config = {};
+
+        try {
+            config = JSON.parse(configNode ? configNode.textContent : "{}");
+        } catch (error) {
+            config = {};
+        }
+
+        var measurementId = config.measurementId || "G-HW6K6L6RNX";
+        var tagUrl = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(measurementId);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () {
+            window.dataLayer.push(arguments);
+        };
+
+        window.gtag("consent", "default", {
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            analytics_storage: "granted",
+            functionality_storage: "granted",
+            security_storage: "granted"
+        });
+
+        if (!window.__karamixGa4Loaded && !document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js?id="]')) {
+            window.__karamixGa4Loaded = true;
+            var script = document.createElement("script");
+            script.async = true;
+            script.src = tagUrl;
+            document.head.appendChild(script);
+        }
+
+        window.gtag("js", new Date());
+        window.gtag("config", measurementId, {
+            send_page_view: true,
+            allow_google_signals: Boolean(config.allowGoogleSignals),
+            allow_ad_personalization_signals: Boolean(config.allowAdPersonalization),
+            cookie_flags: "SameSite=Lax;Secure",
+            page_title: document.title,
+            page_location: window.location.href,
+            transport_type: "beacon"
+        });
+    })();
+    </script>
+    <script src="js/analytics.js" defer></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -360,8 +420,8 @@
                         Karamix Labs designs and builds modern mobile application interfaces, responsive web platforms, business dashboards, and practical digital systems with clean structure, premium visuals, and user-focused experiences.
                     </p>
                     <div class="hero__actions">
-                        <a class="button button--primary" href="#contact" data-i18n="heroPrimary">Start a Project</a>
-                        <a class="button button--secondary" href="#services" data-i18n="heroSecondary">View Services</a>
+                        <a class="button button--primary" href="#contact" data-i18n="heroPrimary" data-analytics-event="cta_click" data-analytics-label="hero_start_project">Start a Project</a>
+                        <a class="button button--secondary" href="#services" data-i18n="heroSecondary" data-analytics-event="cta_click" data-analytics-label="hero_view_services">View Services</a>
                     </div>
                 </div>
 
@@ -753,29 +813,29 @@
                     </div>
                 </div>
                 <div class="contact-methods" aria-label="Contact options">
-                    <a class="contact-card contact-card--primary" href="https://wa.me/963937365350?text=Hello%20Karamix%20Labs%2C%20I%20would%20like%20to%20discuss%20a%20digital%20interface%20project" target="_blank" rel="noopener noreferrer">
+                    <a class="contact-card contact-card--primary" href="https://wa.me/963937365350?text=Hello%20Karamix%20Labs%2C%20I%20would%20like%20to%20discuss%20a%20digital%20interface%20project" target="_blank" rel="noopener noreferrer" data-analytics-event="contact_click" data-analytics-channel="whatsapp" data-analytics-label="contact_card_whatsapp">
                         <span>WhatsApp</span>
                         <strong data-i18n="contactWhatsApp">Message Karamix Labs</strong>
                         <small data-i18n="contactWhatsAppSmall">Primary contact channel</small>
                     </a>
-                    <a class="contact-card" href="mailto:abdulkarimhajyasin@gmail.com">
+                    <a class="contact-card" href="mailto:abdulkarimhajyasin@gmail.com" data-analytics-event="contact_click" data-analytics-channel="email" data-analytics-label="contact_card_email">
                         <span data-i18n="contactEmailLabel">Email</span>
                         <strong>abdulkarimhajyasin@gmail.com</strong>
                         <small data-i18n="contactEmailSmall">Recommended for project briefs and formal discussions</small>
                     </a>
-                    <a class="contact-card" href="https://www.linkedin.com/in/abdulkarim-haj-yasin-bb7619234" target="_blank" rel="noopener noreferrer">
+                    <a class="contact-card" href="https://www.linkedin.com/in/abdulkarim-haj-yasin-bb7619234" target="_blank" rel="noopener noreferrer" data-analytics-event="outbound_link_click" data-analytics-channel="linkedin" data-analytics-label="contact_card_linkedin">
                         <span>LinkedIn</span>
                         <strong data-i18n="contactLinkedIn">Professional Profile</strong>
                         <small data-i18n="contactLinkedInSmall">Founder and company networking</small>
                     </a>
-                    <a class="contact-card contact-card--telegram" href="https://t.me/karamixlabs" target="_blank" rel="noopener noreferrer">
+                    <a class="contact-card contact-card--telegram" href="https://t.me/karamixlabs" target="_blank" rel="noopener noreferrer" data-analytics-event="contact_click" data-analytics-channel="telegram" data-analytics-label="contact_card_telegram">
                         <span data-i18n="contactTelegramLabel">Telegram Channel</span>
                         <strong><span class="contact-card__icon" aria-hidden="true">TG</span> <span data-i18n="contactTelegram">Karamix Labs Updates</span></strong>
                         <small data-i18n="contactTelegramSmall">Follow Karamix Labs updates, design showcases, digital systems, and company news.</small>
                     </a>
                     <div class="contact-actions">
-                        <a class="button button--primary" href="https://wa.me/963937365350?text=Hello%20Karamix%20Labs%2C%20I%20would%20like%20to%20discuss%20a%20digital%20interface%20project" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsAppButton">Start on WhatsApp</a>
-                        <a class="button button--secondary" href="https://t.me/karamixlabs" target="_blank" rel="noopener noreferrer" data-i18n="contactTelegramButton">Open Telegram</a>
+                        <a class="button button--primary" href="https://wa.me/963937365350?text=Hello%20Karamix%20Labs%2C%20I%20would%20like%20to%20discuss%20a%20digital%20interface%20project" target="_blank" rel="noopener noreferrer" data-i18n="contactWhatsAppButton" data-analytics-event="contact_click" data-analytics-channel="whatsapp" data-analytics-label="contact_button_whatsapp">Start on WhatsApp</a>
+                        <a class="button button--secondary" href="https://t.me/karamixlabs" target="_blank" rel="noopener noreferrer" data-i18n="contactTelegramButton" data-analytics-event="contact_click" data-analytics-channel="telegram" data-analytics-label="contact_button_telegram">Open Telegram</a>
                     </div>
                 </div>
             </div>
@@ -824,15 +884,6 @@
         </div>
     </footer>
 
-    <script type="application/json" id="analytics-config">
-    {
-      "status": "ready",
-      "providers": ["Google Analytics", "Plausible", "Cloudflare Web Analytics"],
-      "privacyMode": "consent-first",
-      "loadByDefault": false
-    }
-    </script>
-    <!-- Analytics integration placeholder: keep future Google Analytics, Plausible, or Cloudflare snippets lightweight, consent-aware, and privacy-conscious. -->
     <script src="js/main.js" defer></script>
 </body>
 </html>
