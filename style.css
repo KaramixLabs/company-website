@@ -1714,6 +1714,21 @@ p {
     font-size: 0.95rem;
 }
 
+.seo-context {
+    display: grid;
+    gap: var(--space-2);
+    max-width: 62rem;
+    padding: var(--space-4);
+    border: 1px solid rgba(25, 211, 255, 0.1);
+    border-radius: var(--radius-md);
+    background: rgba(12, 11, 17, 0.34);
+}
+
+.seo-context p {
+    color: rgba(200, 192, 214, 0.68);
+    font-size: 0.9rem;
+}
+
 .site-footer {
     padding-block: var(--space-5);
     border-top: 1px solid var(--color-border);
