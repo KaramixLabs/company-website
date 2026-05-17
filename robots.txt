@@ -5,7 +5,6 @@ User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
-Allow: /imgs/
-Allow: /icons/
+Allow: /
 
 Sitemap: https://karamixlabs.com/sitemap.xml
