@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Karamix Labs Icon</title>
+  <desc id="desc">KL monogram icon for Karamix Labs.</desc>
+  <defs>
+    <radialGradient id="icon-bg" cx="50%" cy="34%" r="72%">
+      <stop stop-color="#2b2840"/>
+      <stop offset="1" stop-color="#100f16"/>
+    </radialGradient>
+    <linearGradient id="icon-ring" x1="92" y1="98" x2="420" y2="414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff1f63"/>
+      <stop offset="1" stop-color="#19d3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#icon-bg)"/>
+  <circle cx="256" cy="256" r="158" fill="url(#icon-ring)"/>
+  <circle cx="256" cy="256" r="128" fill="#100f16"/>
+  <path d="M151 363V149h46v86l80-86h56l-87 91 93 123h-58l-66-91-18 19v72h-46Zm209 0V149h47v173h90v41H360Z" fill="#fff"/>
+</svg>
